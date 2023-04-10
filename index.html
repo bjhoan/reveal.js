@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Comparativo archivos</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3> Comparativa entre archivos</h3>
+					<p>
+						<small> creado por Jhoan Steven P.</small>
+					</p>
+				</section>
+				<section>
+					<h2>¿Que vamos a ver?</h2>
+
+					<p>
+						Vamos a ver las caracteristicas de los archivos Planos, XML, Json y parquet.
+					</p>
+				</section>
+				<section>
+					<section data-transition="slide" data-background="#C2B3B0" data-background="zoom">
+						<h2>Archivos Planos</h2>
+
+					</section>
+					<section data-transition="slide-in fade-out" data-background="#C2B3B0">
+						<h2>¿Que son los Archivos Planos?</h2>
+
+						<p>
+							Los archivos planos se pueden describir como bases de datos de texto plano. 
+							Cada resgistro de un archivo plano esta en una linea diferente,
+							lo que facilita la maniobra a traves de los datos de ellos.
+						</p>
+					</section>
+					<section data-transition="fade-in slide-out" data-background="#C2B3B0">
+						<h2>caracteristicas de los archivos planos</h2>
+
+						<ul>
+							<li>Son faciles de configurar y de integrar.</li>
+							<li>Los archivos planos almacenan todos los registros en un solo lugar de una manera facil de entender.</li>
+							<li>No ocupa muchos recursos, perfecto para empresas pequeñas.</li>
+						</ul>
+					</section>
+				</section>
+				<section data-transition="slide">
+					<section>
+						<h2>XML</h2>
+
+						<p>
+							Extensible Markup Language(XML) es un lenguaje de marcado que define un conjunto de reglas 
+							para la modificacion de documentos.
+						</p>
+					</section>
+					<section>
+						<h2>caracteristicas de XML</h2>
+						<ul>
+							<li>XML almacena los datos en formato de texto simple, lo que facilita el almacenar datos.</li>
+							<li>Simplifica el intercambio de datos entre aplicaciones compatibles</li>
+							<li>Permite el acceso de diversas aplicaciones a tus datos, no solo HTML</li>
+						</ul>
+					</section>
+					<section>
+						<h2>XML permitio la creacion de otros lenguajes</h2>
+
+						<p>Muchos idiomas nuevos son creados con XML, aqui muestro algunos:</p>
+
+						<ul>
+							<li>XHTML(Extensible HyperText Markup Language)</li>
+							<li>WSDL (Web Services Description Language)</li>
+							<li>RSS (Really Simple Syndication)</li>
+						</ul>
+					</section>
+				</section>
+				<section data-background="#BACD9D" data-auto-animate>
+					<h2>Json</h2>
+
+					<p>
+						JavaScript object notation (Json) es un formato de intercambio de datos que resulta muy facil de leer 
+						y escribir para programadores y sencillo de interpretar y crear para las maquinas.
+					</p>
+				</section>
+				<section data-auto-animate data-background="#BACD9D">
+					<h2 style="color: slateblue;">Json</h2>
+
+					<p style="color: slateblue;">
+						json es un lenguaje autodescriptivo y facil de entender, siendo una altenativa para XML,
+						siendo mas rapido en cualquier computador, otro factor por el que
+						tambien se destaca por ser mas ligero en las transmisiones.
+					</p>
+				</section>
+				<section data-auto-animate data-background="#D8A69A">
+					<h2 style="color: black;">
+						json
+					</h2>
+					<p style="color: black;">
+						A pesar de todo Json tambien tiene sus desventajas, una de estas es que no soporta grandes cargas de datos,
+						requiere de mecanismos externos para la seguridad y no cuenta con extensibilidad.
+					</p>
+				</section>
+				<section>
+					<section data-transition="Convex" >
+						<h2>Parquet</h2>
+
+						<p>
+							Apache Parquet es un formato de almacenamiento en columnas enfocado en optimizar
+							el procesamiento y el modelo de los datos.
+						</p>
+					</section>
+					<section data-transition="Concave">
+						<h2>caracteristicas de Parquet</h2>
+
+						<ul>
+							<li>Los archivos parquet se diseñaron teniendo estructuras complejas de datos</li>
+							<li>Esta licenciado bajo la licencia apache y disponible para cualquier proyecto</li>
+							<li>Esta orientada a columnas y diseñado para brindar un almacenamiento en columnas.</li>
+						</ul>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
