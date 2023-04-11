@@ -24,25 +24,25 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
+				<section data-background-gradient="linear-gradient(to bottom, #AED6F1, #EC7063)">
 					<h3> Comparativa entre archivos</h3>
 					<p>
 						<small> creado por Jhoan Steven P.</small>
 					</p>
 				</section>
-				<section>
+				<section data-background="#5DADE2" data-transition="zoom" data-background-transition="zoom">
 					<h2>¿Que vamos a ver?</h2>
 
 					<p>
 						Vamos a ver las caracteristicas de los archivos Planos, XML, Json y parquet.
 					</p>
 				</section>
-				<section>
-					<section data-transition="slide" data-background="#C2B3B0" data-background="zoom">
+				<section data-background-gradient="linear-gradient(to bottom, #5DADE2, #EC7063)">
+					<section data-transition="slide" data-background="zoom">
 						<h2>Archivos Planos</h2>
 
 					</section>
-					<section data-transition="slide-in fade-out" data-background="#C2B3B0">
+					<section data-transition="slide-in fade-out" >
 						<h2>¿Que son los Archivos Planos?</h2>
 
 						<p>
@@ -51,7 +51,7 @@
 							lo que facilita la maniobra a traves de los datos de ellos.
 						</p>
 					</section>
-					<section data-transition="fade-in slide-out" data-background="#C2B3B0">
+					<section data-transition="fade-in slide-out" >
 						<h2>caracteristicas de los archivos planos</h2>
 
 						<ul>
@@ -60,8 +60,16 @@
 							<li>No ocupa muchos recursos, perfecto para empresas pequeñas.</li>
 						</ul>
 					</section>
+					<section >
+						<h2>Ejemplo</h2>
+						<pre><code><script type="text/template">
+							<h1> Hola mundo </h1>
+							<strong> Ver el cielo en el dia es hermoso </strong>
+							<p>New day new me.... </p>
+						</script></code></pre>
+					</section>
 				</section>
-				<section data-transition="slide">
+				<section data-transition="slide" data-background-gradient="radial-gradient(#52BE80 ,#EC7063)">
 					<section>
 						<h2>XML</h2>
 
@@ -89,35 +97,69 @@
 							<li>RSS (Really Simple Syndication)</li>
 						</ul>
 					</section>
+					<section>
+						<h2>Ejemplo</h2>
+						<pre><code><script type="text/template">
+							<?xml version="1.0"?>
+							<birds>
+								<owl id="1201">
+									<species>Bubo bubo</species>
+									<name>Eagle Owl</name>
+									<region>Eurasia</region>
+								</owl>
+							</birds>
+						</script></code></pre>
+					</section>
 				</section>
-				<section data-background="#BACD9D" data-auto-animate>
-					<h2>Json</h2>
-
-					<p>
-						JavaScript object notation (Json) es un formato de intercambio de datos que resulta muy facil de leer 
-						y escribir para programadores y sencillo de interpretar y crear para las maquinas.
-					</p>
+				<section data-background-gradient="linear-gradient(to bottom, #52BE80 , #BDC3C7)">
+					<section data-auto-animate>
+						<h2>Json</h2>
+	
+						<p>
+							JavaScript object notation (Json) es un formato de intercambio de datos que resulta muy facil de leer 
+							y escribir para programadores y sencillo de interpretar y crear para las maquinas.
+						</p>
+					</section>
+					<section data-auto-animate>
+						<h2 style="color: slateblue;">Json</h2>
+	
+						<p style="color: slateblue;">
+							json es un lenguaje autodescriptivo y facil de entender, siendo una altenativa para XML,
+							siendo mas rapido en cualquier computador, otro factor por el que
+							tambien se destaca por ser mas ligero en las transmisiones.
+						</p>
+					</section>
+					<section data-auto-animate>
+						<h2 style="color: black;">
+							json
+						</h2>
+						<p style="color: black;">
+							A pesar de todo Json tambien tiene sus desventajas, una de estas es que no soporta grandes cargas de datos,
+							requiere de mecanismos externos para la seguridad y no cuenta con extensibilidad.
+						</p>
+					</section>
+					<section>
+						<h2>Ejemplo</h2>
+						<pre><code>
+							[
+								{
+									"description": "quarter",
+									"mode": "REQUIRED"
+									"name": "qtr"
+									"type": "STRING"
+								},
+								{
+									"description": "Sales Representative",
+									"mode": "NULLABLE",
+									"name": "rep",
+									"type": "STRING"
+								}
+							]
+						</code></pre>
+					</section>
 				</section>
-				<section data-auto-animate data-background="#BACD9D">
-					<h2 style="color: slateblue;">Json</h2>
-
-					<p style="color: slateblue;">
-						json es un lenguaje autodescriptivo y facil de entender, siendo una altenativa para XML,
-						siendo mas rapido en cualquier computador, otro factor por el que
-						tambien se destaca por ser mas ligero en las transmisiones.
-					</p>
-				</section>
-				<section data-auto-animate data-background="#D8A69A">
-					<h2 style="color: black;">
-						json
-					</h2>
-					<p style="color: black;">
-						A pesar de todo Json tambien tiene sus desventajas, una de estas es que no soporta grandes cargas de datos,
-						requiere de mecanismos externos para la seguridad y no cuenta con extensibilidad.
-					</p>
-				</section>
-				<section>
-					<section data-transition="Convex" >
+				<section data-background-gradient="linear-gradient(to bottom, #BDC3C7, #AF7AC5)">
+					<section data-transition="slide" >
 						<h2>Parquet</h2>
 
 						<p>
@@ -125,7 +167,7 @@
 							el procesamiento y el modelo de los datos.
 						</p>
 					</section>
-					<section data-transition="Concave">
+					<section data-transition="slide">
 						<h2>caracteristicas de Parquet</h2>
 
 						<ul>
@@ -134,8 +176,12 @@
 							<li>Esta orientada a columnas y diseñado para brindar un almacenamiento en columnas.</li>
 						</ul>
 					</section>
+					<section>
+						<h2>Ejemplo</h2>
+						<img src="img/Parquet.png">
+					</section>
 				</section>
-				<section>
+				<section data-background-gradient="radial-gradient(#AF7AC5, #AED6F1)">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/59LCZI0ILzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</section>
 			</div>
